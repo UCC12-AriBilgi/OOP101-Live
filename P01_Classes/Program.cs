@@ -37,16 +37,42 @@
 
             #region CustomerManager,ProductManager
 
-            CustomerManager customerManager = new CustomerManager();
-            customerManager.Add();
+            //CustomerManager customerManager = new CustomerManager();
+            //customerManager.Add();
 
-            ProductManager productManager = new ProductManager();
-            productManager.Add();
+            //ProductManager productManager = new ProductManager();
+            //productManager.Add();
 
-            customerManager.Update();
-            productManager.Update();
+            //customerManager.Update();
+            //productManager.Update();
 
             #endregion
+
+            #region Farklı class/nesne kullanım şekilleri
+            // 1.
+            Customer customer = new Customer();
+            customer.Id = 1;
+            customer.FirstName = "Ümit";
+            customer.LastName = "Karaçivi";
+            customer.City = "İstanbul";
+
+            Console.WriteLine($"Müşteri Adı : {customer.FirstName}\n");
+
+            // 2.
+            Customer customer1 = new Customer
+            {
+                Id = 1,
+                FirstName = "Nurgül",
+                LastName = "Karaçivi",
+                City = "Bursa"
+
+            };
+
+            Console.WriteLine($"Müşteri Adı : {customer1.FirstName}");
+
+            #endregion
+
+
             Console.ReadKey();
         }
     }
