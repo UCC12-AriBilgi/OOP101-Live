@@ -49,7 +49,7 @@
             #endregion
 
             #region Farklı class/nesne kullanım şekilleri
-            // 1.
+            // 1.kullanım şekli
             Customer customer = new Customer();
             customer.Id = 1;
             customer.FirstName = "Ümit";
@@ -58,7 +58,7 @@
 
             Console.WriteLine($"Müşteri Adı : {customer.FirstName}\n");
 
-            // 2.
+            // 2.Kullanım şekli
             Customer customer1 = new Customer
             {
                 Id = 1,
