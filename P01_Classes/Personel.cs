@@ -67,5 +67,20 @@ namespace P01_Classes
             }
 
         }
+
+        // Atamış olduğumuz bilgileri okuyacak bir metot
+        public string getPersonelBilgileri()
+        {
+            string sonuc;
+
+            if (Unvan != null) // Unvan bilgisi oluşmuş mu
+            {
+                sonuc = $"\n-- Personel oluşturuldu--\n\nPersonel Adı : {Ad}\nPersonel Soyadı : {Soyad}\nPersonel Maaşı : {Maas} PNG Kina\nPersonel Ünvanı : {Unvan}\nPersonel İzin Günü : {IzinGunu} Gün\n";
+            }
+            else
+                sonuc = $"\n-- Personel oluşturmanız gerekiyor--\nKontrol ediniz...";
+
+            return sonuc;
+        }
     }
 }
