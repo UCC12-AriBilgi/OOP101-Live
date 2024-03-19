@@ -13,7 +13,7 @@
             Console.WriteLine(tutorials.getTutorialInfo());
 
 
-            tutorials.setTutorial(2, "HTML Dersleri", "Web tasarımı konusunda");
+            tutorials.setTutorial(2, "HTML Dersleri", "Web tasarımı konusunda"); //3.hal
             Console.WriteLine(tutorials.getTutorialInfo());
 
             Console.ReadKey();
