@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04_Polymorphism", "P04_Pol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_Encapsulation", "P05_Encapsulation\P05_Encapsulation.csproj", "{ED491FE4-D770-4075-B0D3-49AE95874787}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06_Interfaces", "P06_Interfaces\P06_Interfaces.csproj", "{433C56F2-E612-4683-A264-C429EFC895AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{ED491FE4-D770-4075-B0D3-49AE95874787}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED491FE4-D770-4075-B0D3-49AE95874787}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED491FE4-D770-4075-B0D3-49AE95874787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{433C56F2-E612-4683-A264-C429EFC895AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{433C56F2-E612-4683-A264-C429EFC895AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{433C56F2-E612-4683-A264-C429EFC895AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{433C56F2-E612-4683-A264-C429EFC895AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

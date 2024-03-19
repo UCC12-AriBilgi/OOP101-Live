@@ -19,6 +19,20 @@ namespace P05_Encapsulation
                 
         }
 
+        //public decimal Balance { get; set; }
+        public decimal Balance
+        {
+            get {
+
+                    return balance; 
+                }
+            set { 
+                    balance = balance + value; 
+                }
+        }
+
+
+
         // Para yatırmak istiyorum diyelim
 
         public void paraYatir(decimal miktar) // set 
