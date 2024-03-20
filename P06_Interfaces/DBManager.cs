@@ -10,7 +10,9 @@ namespace P06_Interfaces
 {
     internal class DBManager
     {
-        private IDatabase database;
+        // Yönetici sınıf
+
+        private IDatabase database; // Interface den bir değişgen tanımlıyorum ki vt classları interfaceden türetildi. hangi olduğunu anlayabilmek için
 
         public DBManager()
         {
@@ -34,10 +36,32 @@ namespace P06_Interfaces
             Console.WriteLine("Kullanıcı şifresi : ");
             password = Console.ReadLine();
 
-            if (database.login(userName,password)==1)
+            if (database.login(userName,password) == 1)
             {
                 menu();
             }
+            else
+                Console.WriteLine("Bağlantı bilgilerinizde bir terslik var..Kontrol ediniz..\n");
+        }
+
+        public void closeDB() 
+        { 
+            database.close(); // hangi db ise git onun close metodunu çalıştır.
+        }
+
+        private void addValue(string value)
+        {
+            database.addvalue(value);
+        }
+
+        private void deleteValue()
+        {
+            database.deletevalue();
+        }
+
+        private void getValue() 
+        { 
+            database.getValue();
         }
 
         private void menu()
@@ -57,23 +81,23 @@ namespace P06_Interfaces
                     Console.Write("Eklemek istediğiniz veri : ");
                     value = Console.ReadLine();
 
-                    //addValue(value);
+                    addValue(value);
                     Console.Clear();
                     menu();
                     break;
                 case 2:
                     Console.Clear();
-                    //deleteValue();
+                    deleteValue();
                     menu();
                     break;
                 case 3:
                     Console.Clear();
-                    //getValue();
+                    getValue();
                     menu();
                     break;
                 case 4:
                     Console.Clear();
-                    //closeDB();
+                    closeDB();
                     menu();
                     break;
 
