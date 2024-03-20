@@ -73,7 +73,7 @@ namespace P06_Interfaces
             Console.WriteLine("1 - Veri ekle\n2 - Veri Sil\n3 - Veri Getir\n4 - Bağlantıyı kes\n");
             Console.WriteLine("Yapacağınız işlem ");
 
-            option = Convert.ToInt32(Console.ReadLine);
+            option = Convert.ToInt32(Console.ReadLine());
 
             switch(option)
             {
@@ -98,7 +98,7 @@ namespace P06_Interfaces
                 case 4:
                     Console.Clear();
                     closeDB();
-                    menu();
+                    
                     break;
 
                 default:
