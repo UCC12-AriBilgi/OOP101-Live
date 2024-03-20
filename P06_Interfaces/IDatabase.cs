@@ -14,7 +14,7 @@ namespace P06_Interfaces
         // db mize giriş yapacak olan metot tanımı
         int login(string userName,string password);
 
-        // db mizi kapatacak olan metot
+        // db mizi kapatacak olan metot imzası
         void close();
 
         // db mize bir kayıt ekleyecek metot
